@@ -572,6 +572,20 @@ input:focus, textarea:focus{
     padding-left: 25px;
 }
 
+.box-logo{
+    width: 1400px;
+    height: 400px;
+    margin-left: 50px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3)
+}
+
+.box-logo img{
+    height: auto;
+    width: 500px;
+    padding-top: 60px;
+    padding-left: 80px;
+}
+
 .box-animation1{
     width: 1400px;
     height: 400px;
