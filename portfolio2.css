@@ -188,13 +188,22 @@ h2{
     width: 550px;
     height: 316px;
     margin: 27px;
-    border: 2px solid #1c1c1c;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .box1 img{
     width: 562px;
     height: auto;
+}
+
+.video-container{
+    background-color: #f2efea;
+    padding: 20px;
+}
+
+video{
+    width: 562px;
+    height: auto;
+    max-width: 600px;
 }
 
 
@@ -532,6 +541,35 @@ input[type=text], select, textarea {
 input:focus, textarea:focus{
     border-color: #581212;
     outline: none;
+}
+
+/* portfolio */
+.box-produktbilled{
+    width: 1400px;
+    height: 400px;
+    margin-left: 50px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3)
+}
+
+.box-produktbilled img{
+   height: 350px;
+   width: 600px;
+   padding-top: 25px;
+   padding-left: 25px;
+}
+
+.box-produktvideo{
+    width: 1400px;
+    height: 400px;
+    margin-left: 50px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3)
+}
+
+.box-produktvideo video{
+    height: 350px;
+    width: 600px;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 
 footer{
