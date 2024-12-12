@@ -208,18 +208,21 @@ video{
 
 
 @media (max-width: 768px){
+    .projekt-container{
+        width: 740px;
+        height: auto;
+    }
     .box_container1{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         
     }
     .box_container1 div{
-        width: 2180x;
+        width: 180px;
         height: 160px;
-
     }
 
     .box1 img{
@@ -228,13 +231,24 @@ video{
     }
 
 
+   video{
+    width: 285px;
+    height: auto;
+   }
+
+
 }
 
-@media (max-width: 480px){
+@media (max-width: 460px){
+    .projekt-container{
+        width: 250px;
+        height: auto;
+    }
     .box_container1{
         display: flex;
         flex-wrap: wrap;
-        
+        align-items: center;
+        justify-content: flex-start;
     }
     .box_container1 div{
         width: 200px;
@@ -243,7 +257,11 @@ video{
     }
 
     .box1 img{
-        width: 200px;
+        width: 180px;
+        height: auto;
+    }
+    video{
+        width: 180px;
         height: auto;
     }
 }
@@ -425,6 +443,52 @@ p{
     padding-left: 20px;
 }
 
+@media (max-width: 768px){
+    .ommig-container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    .ommig-container img{
+        width: 50%;
+        height: auto;
+        align-content: center;
+        padding-left: 150px;
+        margin-bottom: -100px;
+    }
+    .skrift-ommig{
+        display: flex;
+        flex-direction: column;
+    }
+    .adobe-icons img{
+        display: none;
+    }
+}
+
+@media (max-width: 460px){
+    .ommig-container{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    .ommig-container img{
+        width: 50%;
+        height: auto;
+        align-content: center;
+        padding-left: 48px;
+        margin-bottom: -100px;
+    }
+    p{
+        font-size: 16px;
+    }
+}
+
 
 
 .adobe-icons div{
@@ -543,6 +607,60 @@ input:focus, textarea:focus{
     outline: none;
 }
 
+@media(max-width: 768px){
+    .kontakt-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box, .kontakt-form{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .info-box img{
+        margin-bottom: 10px;
+    }
+
+    .form-group label{
+        font-size: 14px;
+    }
+
+    input[type=text], select, textarea{
+        padding: 8px;
+    }
+}
+
+@media (max-width: 460px){
+    .kontakt-container{
+        padding: 15px;
+    }
+    .info-box, .kontakt-form{
+        width: 60%;
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .info-box img{
+        margin-bottom: 15px;
+    }
+    form{
+        gap: 15px;
+    }
+    .form-group label{
+        font-size: 14px;
+    }
+    input[type=text], select, textarea{
+        padding: 8px;
+        font-size: 14px;
+    }
+    h2{
+        font-size: 14px;
+    }
+    .info-box ul li{
+        font-size: 12px;
+    }
+}
+
 /* portfolio */
 .box-produktbilled{
     width: 1400px;
@@ -556,6 +674,16 @@ input:focus, textarea:focus{
    width: 600px;
    padding-top: 25px;
    padding-left: 25px;
+}
+
+.box-produktbilled h3 p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 500px;
+    box-sizing: border-box;
 }
 
 .box-produktvideo{
@@ -609,7 +737,7 @@ input:focus, textarea:focus{
 
 .box-illustrator img{
     height: 350px;
-    width: 600px;
+    width: auto;
     padding-top: 25px;
     padding-left: 25px;
 }
