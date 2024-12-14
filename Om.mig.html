@@ -8,31 +8,32 @@
     <link rel="stylesheet" href="https://use.typekit.net/zsz8too.css">
 </head>
 <body>
-    <div class="image_container">
-        <img src="img/forsidepic.jpg" alt="forside" width="1500" height="400" class="background_image">
-        <div class="image-tekst">Om mig</div>
+    <header>
+    <div class="image-container">
+        <img src="img/forsidepic.jpg" alt="forside" width="1500" height="400" class="image-container_background">
+        <div class="image-container_tekst">Om mig</div>
     </div>
     <header class="main-header">
         <h1><a href="index.html">SandraStud1o</a></h1>
-        <nav>
-            <ul>
+        <nav class="main-header_nav">
+            <ul class="main-header_nav-list">
                 <!-- a stands for anchor. too create hyperlinks, too navigate too the other pages on the website -->
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="Om.mig.html">Om mig</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Kontakt.html" class="kontakt-box">Kontakt</a></li>
+                <li class="main-header_nav-items"><a href="index.html">Hjem</a></li>
+                <li class="main-header_nav-items"><a href="Om.mig.html">Om mig</a></li>
+                <li class="main-header_nav-items"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="main-header_nav-items"><a href="Kontakt.html" class="kontakt-box">Kontakt</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="ommig-container">
-            <div>
+        <div class="about">
+            <div class="about__image-container">
              <img src="img/Portræt.jpg" alt="portæt" class="portæt">
             </div>
-            <div class="skrift-ommig">
+            <div class="about__text">
                 <p>Hej, mit navn er Sandra Rømer-Enemark. Jeg studerer som multimediedesigner på UCL, hvor jeg fordyber mig i at udvikle kreative design og digitale løsninger. </p>
                 <p>Gennem min uddannelse har jeg skabt erfaring med:</p>
-                <ul>
+                <ul class="about__skills">
                     <li>Produktion af produktvideoer og – billeder.</li>
                     <li>Grafisk design og visuelle illustrationer</li>
                     <li>Webdesign og kodning (HTML og CSS)</li>
@@ -40,28 +41,31 @@
                  </ul>
                 <p>Jeg ambitiøs og dedikeret til at skabe et godt færdigt produkt. Jeg er kreativ nysgerrig og jeg er nyder at udforske nye trends og teknologier inden for det digitale felt. </p>
                 <p>Jeg elsker at tegne og det hjælper mig med at visualisere mine ideer kreativt.  Derudover nyder jeg også en god bog og noget godt musik. </p>
-                <p class="hide-on-small-screens">Programmer jeg har erfaring i:</p>
-            <div class="adobe-icons">
-                <img src="Adobe icons/adobe-illustrator.png" alt="illustrator">
-                <img src="Adobe icons/adobe-lightroom.png" alt="lightroom">
-                <img src="Adobe icons/adobe-photoshop.png" alt="photoshop">
-                <img src="Adobe icons/after-effects.png" alt="after-effects">
-                <img src="Adobe icons/indesign (1).png" alt="indesign">
-                <img src="Adobe icons/premiere.png" alt="premiere">
+                <p class="about__programs-heading hide-on-small-screens">Programmer jeg har erfaring i:</p>
+            <div class="about__adobe-icons">
+                <img src="Adobe icons/adobe-illustrator.png" alt="illustrator" class="about__adobe-icon">
+                <img src="Adobe icons/adobe-lightroom.png" alt="lightroom" class="about__adobe-icon">
+                <img src="Adobe icons/adobe-photoshop.png" alt="photoshop" class="about__adobe-icon">
+                <img src="Adobe icons/after-effects.png" alt="after-effects" class="about__adobe-icon">
+                <img src="Adobe icons/indesign (1).png" alt="indesign" class="about__adobe-icon">
+                <img src="Adobe icons/premiere.png" alt="premiere" class="about__adobe-icon">
 
+            </div>
+            <div class="about__credits hide-on-small-screens">
+                <a href="https://www.flaticon.com/free-icons/adobe-photoshop" title="adobe photoshop icons">Adobe photoshop icons created by riajulislam - Flaticon</a>
             </div>
             </div>
         </div>
 
     </main>
     <footer>
-        <div class="logo2.container">
-            <h3>SandraStud1o</h3>
+        <div class="footer__logo-container">
+            <h3 class="footer__logo">SandraStud1o</h3>
         </div>
-        <div class="kontakt_info">
-            <ul>
-                <li>Tel: +45 30 20 54 61</li>
-                <li>Sandra@vasab.dk</li>
+        <div class="footer__contact-info">
+            <ul clas="footer__contact-list">
+                <li class="footer__contact-item">Tel: +45 30 20 54 61</li>
+                <li class="footer__contact-item">Sandra@vasab.dk</li>
             </ul>
             
         </div>

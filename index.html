@@ -9,51 +9,53 @@
 
 </head>
 <body>
-    <div class="image_container">
-        <img src="img/forsidepic.jpg" alt="forside" width="1500" height="400" class="background_image">
+    <header>
+    <div class="image-container">
+        <img src="img/forsidepic.jpg" alt="forside" width="1500" height="400" class="image-container_background">
     </div>
     <header class="main-header">
         <h1><a href="index.html">SandraStud1o</a></h1>
-        <nav>
-            <ul>
+        <nav class="main-header_nav">
+            <ul class="main-header_nav-list">
                 <!-- a stands for anchor. too create hyperlinks, too navigate too the other pages on the website -->
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="Om.mig.html">Om mig</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Kontakt.html" class="kontakt-box">Kontakt</a></li>
+                <li class="main-header_nav-items"><a href="index.html">Hjem</a></li>
+                <li class="main-header_nav-items"><a href="Om.mig.html">Om mig</a></li>
+                <li class="main-header_nav-items"><a href="Portfolio.html">Portfolio</a></li>
+                <li class="main-header_nav-items"><a href="Kontakt.html" class="kontakt-box">Kontakt</a></li>
             </ul>
         </nav>
     </header>
    <main>
-    <div class="projekt-container">
-        <div class="h2_container">
-            <h2>Mine Projekter!</h2>
+    <div class="projects">
+        <div class="projects__header">
+            <h2 class="projects__title">Mine Projekter!</h2>
         </div>
 
-        <div class="box_container1">
-            <div class="box1">
-                <img src="img/Produktbillede.jpeg" alt="produktbillede">
+        <div class="projects__content">
+            <div class="projects__item projects__item--image">
+                <img src="img/Produktbillede.jpeg" alt="produktbillede" class="projects__image">
             </div>
-            <div class="video-container">
-                <video src="Video/Produkt_video.mp4" type="video.mp4" width="640" height="360" controls autoplay loop muted>
+            <div class="projects__item projects__item--video">
+                <video src="Video/Produkt_video.mp4" type="video.mp4" width="640" height="360" controls autoplay loop muted class="projects__video">
                 </video>
-            </div>
-            
+            </div>   
         </div>
-        <div>
-        <a href="Portfolio.html" class="button_container">
-            <button>Portfolio</button>
+
+        <div class="projects__cta">
+        <a href="Portfolio.html" class="projects__link">
+            <button class="projects__button">Portfolio</button>
         </a>
     </div>
-    </div>
 
-        <div class="om_mig_forside">
-            <div class="in_action">
-                <img src="img/Studio.jpg" alt="inaction">
+    </div class="introduction">
+        <div class="introduction-container">
+            <div class="introduction__image-container">
+                <img src="img/Studio.jpg" alt="inaction" class="introduction__image">
             </div>
-            <div class="div1"><p>Jeg hjælper dig med at skabe visuelle løsninger, der får dine smykker til at stråle – fra inspirerende webdesign til digitale oplevelser, der fremhæver skønheden og værdien i dine kreationer.</p>
-                <a href="Om.mig.html" class="button1_container">
-                    <button>Om mig</button>
+            <div class="introduction__text">
+                <p class="introduction__description">Jeg hjælper dig med at skabe visuelle løsninger, der får dine smykker til at stråle – fra inspirerende webdesign til digitale oplevelser, der fremhæver skønheden og værdien i dine kreationer.</p>
+                <a href="Om.mig.html" class="introduction__link">
+                    <button class="introduction__button">Om mig</button>
                 </a>
             </div>
     
@@ -62,13 +64,13 @@
 
     </main>
     <footer>
-        <div class="logo2.container">
-            <h3>SandraStud1o</h3>
+        <div class="footer__logo-container">
+            <h3 class="footer__logo">SandraStud1o</h3>
         </div>
-        <div class="kontakt_info">
-            <ul>
-                <li>Tel: +45 30 20 54 61</li>
-                <li>Sandra@vasab.dk</li>
+        <div class="footer__contact-info">
+            <ul clas="footer__contact-list">
+                <li class="footer__contact-item">Tel: +45 30 20 54 61</li>
+                <li class="footer__contact-item">Sandra@vasab.dk</li>
             </ul>
             
         </div>
