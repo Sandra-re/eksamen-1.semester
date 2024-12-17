@@ -1,37 +1,41 @@
+/* generelle stilindstillinger for alle elementer */
 body, ul, h1, a {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+    text-decoration: none; /* fjerne understregning på links*/
+    list-style: none; /* fjern punkter fra lister*/
+    box-sizing: border-box; /* gør boksberegning præcis*/
 }
 
+/* baggrundsfarve og overskydende inhold */
 body{
     background-color: #f2efea;
-    overflow-x: hidden; /*prevents the horizontal scrolling*/
+    overflow-x: hidden; /*fjerner horizontal scrolling*/
 }
 
+/* stil for billedcontainer */
 .image-container div{
-    position: relative;
+    position: relative;/*gør at elementet placeres relativt i forhold til sin normale position(dette tillader brug af absolute positionering for børnene af elementet*/
     width: 100%;
     margin: 0 auto;
 }
 
-
+/*baggrundsbillede i container*/
 .image-container_background{
     display: block;
     width: 100%;
     height: auto;
 }
 
+/*tekst, der er placeret over billede*/
 .image-container_tekst{
-    position: absolute;
+    position: absolute;/*gør, at elementerne placeres i forhold til den nærmeste positionerede forældre*/
     bottom: 250px;
     left: 100px;
     color: #f2efea;
     font-size: 150px;
 }
-
+/*kontaktboks*/
 .kontakt-box{
     display: inline-block;
     text-align: center;
@@ -40,43 +44,43 @@ body{
     padding: 5px 10px;
 }
 
-/*Header Styling*/
+/*Header stil*/
 .main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: fixed;/* gør header følge med når man scroller*/
+    top: 0;/*placerer elementet helt øverst på skærmen*/
+    left: 0;/*placerer elementet helt til venstre på skærmen*/
     width: 100%;
     background-color: #f2efea; /*Header background color*/
     color: #1c1c1c; /*Text color*/
     padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/*placerer indholdet med jævn mellemrum langs hovedaksen*/
     align-items: center;
-    z-index: 1;
+    z-index: 1;/*angiver at elementet skal være placeret foran andre elementer med lavere z-index*/
     font-family: linotype-didot-headline, serif;
-    overflow: hidden;
+    overflow: hidden;/*skjuler alt indhol der overskrider elementets dimensioner*/
     box-sizing: border-box;
 }
 
-/*Logo Styling*/
+/*Logo stil*/
 .main-header h1 a{
-    font-size: 25px; /*Adjust font size*/
+    font-size: 25px; /*juster font size*/
     font-weight: bold;
     margin-left: 0;
     color: #1c1c1c;
 }
 
-/*Navigation Styling*/
+/*Navigation i header*/
 .main-header nav ul {
     display: flex;
     align-items: center;
 }
 
-
+/*listepunkter i navigation*/
 .main-header nav ul li {
     list-style: none;
 }
-
+/*links i navigation*/
 .main-header nav ul li a {
     color: #1c1c1c; /*Link color*/
     font-size: 18px;
@@ -87,7 +91,7 @@ body{
     padding: 5px 10px;
     
 }
-
+/*hover-effekt på links*/
 .main-header nav ul li a:hover {
     color: #980b0b; /*Highlight color on hover*/
 }
@@ -107,20 +111,20 @@ body{
 
     .main-header {
         position: relative;
-        flex-direction: column; /*Stack elements vertically*/
-        align-items: flex-start; /*Align elements to the left*/
+        flex-direction: column; /*Stak elementerne vertikalt*/
+        align-items: flex-start; /*juster elementer til ventre*/
         background-color: #f2efea;
         padding: 10px 20px;
     }
 
     .main-header h1 {
-        font-size: 1.8rem; /*Reduce font size for smaller screens*/
+        font-size: 1.8rem; /*mindre skriftstørrelse på små skærme*/
         padding-bottom: 12px;
     }
 
     .main-header nav ul {
-        flex-direction: column; /*Stack navigation links vertically*/
-        gap: 12px; /*Adjust spacing between links*/
+        flex-direction: column;
+        gap: 12px; /*juster afstanden mellem links*/
     }
     .image-container_background{
         display: none;
@@ -133,42 +137,42 @@ body{
 
 @media (max-width: 480px) {
     .main-header h1 {
-        font-size: 20px; /*Further reduce font size for very small screens*/
+        font-size: 20px; /*yderligere reducer fontstørrelsen*/
     }
 
     .main-header nav ul li a {
-        font-size: 15px; /*Reduce menu font size for very small screens */
+        font-size: 15px; /*reducer fontstørrelsen på navigationen */
     }
 
 }
 
 
-
+/*projekter*/
 .projects{
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
+    display: flex; /*flexbox for at arrangere indholdet i en fleksibel container*/
+    justify-content: center; /*centerer indholdet horisontalt i containeren*/
+    align-items: stretch; /*sørger for, at indholdet strækker sig til at fylde containerens højde*/
+    flex-direction: column;/*sætter retningen af flex-elementerne til en kolonne vertikalt*/
     width: 1240px;
     height: 600px;
     margin: 20px auto;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
     padding-bottom: 30px;
 }
-
+/*indstillinger for projekterne*/
 .projects div{
-    flex: 1;
+    flex: 1; /* gør hvert <div-element fleksibelt og får det til at strække sig, så det fylder lige meget af containerens plads*/
     margin: 0;
     border: none;
 }
 
 .projects__header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;/* justere indholdet horisontalt, så det starter fra begyndelsen af containeren(venstres side)*/
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;/* tillader fleksible elementer at bryde til næste linje, hvis der ikke er plads nok på linjen*/
     flex-direction: column;
-    align-content: center;
+    align-content: center;/*justerer rækkerne af fleksible elemtner og centrer dem vertikalt i containeren*/
 }
 
 h2{
@@ -178,6 +182,7 @@ h2{
     font-weight: bold;
 }
 
+/*projekter indhold*/
 .projects__content{
     display: flex;
     justify-content: center;
@@ -189,7 +194,7 @@ h2{
     height: 316px;
     margin: 27px;
 }
-
+/*billeder og videoer*/
 .projects__item--image img{
     width: 562px;
     height: auto;
@@ -626,7 +631,7 @@ input[type=text], select, textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 8px;
-    resize: vertical;
+    resize: vertical;/*angiver at elementet kan ændres i størrelse kun i lodret retning*/
   }
 
 .input, textarea{
